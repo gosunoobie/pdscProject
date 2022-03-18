@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="stylesheet" href="../assets/css/sass/login.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-header">
+         <img class ="header-img"src="../assets/images/Alt.png" alt="">
+          <h2> Already have an <span>Account?</span></h2>
+      
+          <section class="form">
+      
+            <div class="inputs">
+              <input type="text" id="email" placeholder="Email Address">
+              <inline class="errorLogo">
+                <img src="../assets/images/icon-error.svg" alt="">
+              </inline>
+              <div class="errorMessage">
+                <p>Please enter a valid email</p>
+              </div>
+              </input>
+            </div>
+            <div class="inputs">
+              <input type="text" id="password" placeholder="Password">
+              <inline class="errorLogo">
+                <img src="../assets/images/icon-error.svg" alt="">
+              </inline>
+              <div class="errorMessage">
+                <p>Password cannot be empty</p>
+              </div>
+              </input>
+            </div>
+            <div class="help">
+                <div class="checkbox">
+            
+                     <input type="checkbox" id="checkbox" value="Remember">
+                    <div>Remember Me</div>
+
+                    </div>
+                    <div class="forgot">
+                        <a href="">Forgot Password?</a>
+                    </div>
+
+                </div>
+              <div class="btn">
+            <button class="done">
+              Log In
+            </button>
+           </div>
+              <inline id="inline-first-login">  Don't have an account  </inline>
+           <inline><a class="sign-up" href="/static/signup.html"> Sign Up</a> </inline>
+            </section>
+
+        </div>
+
+       
+        <div class="footer">
+          <div class="footer-logo">
+            
+          </div>
+         <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook-f"></i>
+  
+          <i class="fab fa-github"></i>
+        </div>
+          <p id="copyright">&copy; 2021-ALL RIGHTS RESERVED | PDSC NEPAL</p>
+        </div>
+      </div>
+ <script src="../assets/js/signup.js"></script>   
+</body>
+</html>

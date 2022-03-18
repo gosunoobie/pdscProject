@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet" ');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #152036;
+}
+
+.hero {
+  width: 1140px;
+  margin: 10.5vh auto;
+}
+
+.hero-header {
+  text-align: center;
+}
+
+.hero-header .header-img {
+  width: 300px;
+}
+
+.hero-header h2 {
+  font-weight: 300;
+  font-size: 2rem;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-header h2 span {
+  color: cyan;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.hero-header p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: whitesmoke;
+}
+
+.form {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.25rem auto;
+  width: 450px;
+}
+
+.form .inputs {
+  position: relative;
+}
+
+.form input {
+  color: black;
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: 375px;
+  padding-left: 1.25rem;
+  height: 40px;
+  margin: 0.8rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.form .done {
+  width: 375px;
+  margin: 0.4rem;
+  height: 35px;
+  color: white;
+  background: #4b6be8;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form .done:hover {
+  opacity: 0.75;
+}
+
+.form inline {
+  font-size: 9px;
+  font-weight: 600;
+  color: gray;
+}
+
+.form #inline-first-login {
+  font-size: 10px !important;
+}
+
+.form .sign-up {
+  font-size: 13px !important;
+}
+
+.form #inline-first {
+  margin-left: 45px;
+}
+
+.form inline:last-child {
+  color: orange;
+}
+
+.errorLogo {
+  display: none;
+}
+
+.errorLogo.error {
+  display: block;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+
+.errorMessage {
+  display: none;
+}
+
+.errorMessage.error {
+  display: block;
+  position: relative;
+  color: Red;
+}
+
+.errorMessage.error p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto !important;
+  font-size: 9px;
+  font-weight: 600;
+  margin-right: 8px;
+  color: red !important;
+}
+
+.errorOutline {
+  outline: 2px solid Red;
+}
+
+.help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.help .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+  height: 30px;
+}
+
+.help .checkbox div {
+  font-size: 0.75rem;
+  font-weight: 500;
+  min-width: 70%;
+  color: purple;
+}
+
+.help .forgot a {
+  font-size: 00.75rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#copyright {
+  font-size: 0.65rem;
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.icons {
+  position: relative;
+  z-index: 1;
+  display: inline;
+  margin: 0 auto;
+}
+
+.fab {
+  color: cyan;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  margin: 0.5rem;
+}
+
+.fab:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: -8px !important;
+  z-index: -1;
+  top: -5px;
+  -webkit-transition: all 0.75s linear;
+  transition: all 0.75s linear;
+}
+
+.fab:hover {
+  color: white;
+}
+
+.fab:hover::after {
+  background: Blue;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero {
+    margin: 5rem auto;
+  }
+  .header h2 {
+    font-size: 1.75rem;
+  }
+  .header h2 span {
+    font-size: 1.75rem;
+  }
+  .header p {
+    font-size: 0.6rem;
+  }
+  .footer {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero .header-img {
+    margin-top: 1rem;
+    width: 200px;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .hero h2 span {
+    font-size: 1.5rem;
+  }
+  .hero .form {
+    width: 375px !important;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+  }
+  .hero .form input {
+    width: 350px !important;
+  }
+  .hero .form .done {
+    width: 350px;
+  }
+  .footer {
+    margin-top: 3rem;
+  }
+}
+/*# sourceMappingURL=signup.css.map */

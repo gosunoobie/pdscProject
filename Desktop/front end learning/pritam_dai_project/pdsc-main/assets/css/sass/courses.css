@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet" ');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.hero {
+  margin-top: 5rem;
+}
+
+.hero .hero-wrap {
+  background: #435d8f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#274a8b), to(#152036));
+  background: linear-gradient(180deg, #274a8b 0%, #152036 100%);
+  color: white;
+}
+
+.hero .hero-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  color: white;
+}
+
+.hero .hero-nav p:nth-child(1n) {
+  position: relative;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 1.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.75s ease-in;
+  transition: all 0.75s ease-in;
+}
+
+.hero .hero-nav p:nth-child(1n):after {
+  content: "";
+  position: absolute;
+  width: 67.5%;
+  left: 22px;
+  bottom: 18px;
+  height: 5px;
+  background: orange;
+  display: none;
+  -webkit-animation: hero-nav-links-animation 0.5s linear;
+          animation: hero-nav-links-animation 0.5s linear;
+  opacity: 0.7;
+  border-radius: 15px;
+}
+
+.hero .hero-nav .hero-nav:nth-child() {
+  display: none;
+}
+
+.hero .hero-nav .hero-nav-overview:hover::after {
+  display: block;
+}
+
+.hero .hero-nav .hero-nav-curriculum:hover::after {
+  display: block;
+}
+
+.hero .hero-nav .hero-nav-instructors:hover::after {
+  display: block;
+}
+
+.hero .hero-nav .hero-nav-reviews:hover::after {
+  display: block;
+}
+
+.hero .hero-nav .hero-nav-curriculum:hover {
+  color: orange;
+}
+
+.hero .hero-nav .hero-nav-overview:hover {
+  color: orange;
+}
+
+.hero .hero-nav .hero-nav-instructors:hover {
+  color: orange;
+}
+
+.hero .hero-nav .hero-nav-reviews:hover {
+  color: orange;
+}
+
+.hero .hero-main {
+  overflow: hidden;
+  background: #152036;
+}
+
+.hero .hero-main .hero-main-intro {
+  background: #152036;
+  color: white;
+}
+
+.hero .hero-main .hero-main-intro h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 3rem;
+  position: relative;
+}
+
+.hero .hero-main .hero-main-intro h1:after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 6.5px;
+  background: cyan;
+  border-radius: 10px;
+  bottom: -12.5px;
+  left: 0;
+}
+
+.hero .hero-main .hero-main-intro p {
+  padding: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.hero .hero-main .prerequisite h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 3rem;
+  position: relative;
+  color: white;
+}
+
+.hero .hero-main .prerequisite h1:after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 6.5px;
+  background: cyan;
+  border-radius: 10px;
+  bottom: -12.5px;
+  left: 0;
+}
+
+.hero .hero-main .prerequisite .prerequisites-detail {
+  margin: 3rem;
+}
+
+.hero .hero-main .prerequisite .prerequisites-detail .fa-award {
+  margin-right: 1.5rem;
+}
+
+.hero .hero-main .prerequisite .prerequisites-detail .fa-award:hover {
+  color: cyan;
+}
+
+.hero .hero-main .prerequisite .prerequisites-detail p {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.hero-main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  margin: 5rem;
+}
+
+.hero-main-content .hero-main-image {
+  background-image: url(../../images/courses-02.jpg);
+  min-width: 35%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-hero-faq {
+  width: 825px;
+  margin: 0 auto;
+  /*background: rgb(61,129,209);
+    background: radial-gradient(circle, rgba(61,129,209,1) 2%, rgba(64,137,223,1) 9%, rgba(26,44,73,1) 44%, rgba(24,40,67,1) 62%, rgba(21,32,54,1) 100%);
+*/
+  background: #3d81d1;
+  background: radial-gradient(circle, #3d81d1 0%, #152036 56%);
+}
+
+.questions-title {
+  margin: 0 0 2.5rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.qna {
+  padding: 16px 0;
+  border-bottom: 1px solid whitesmoke;
+  cursor: pointer;
+}
+
+.questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.questions p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.questions.style {
+  font-weight: 700;
+}
+
+.questions:hover {
+  font-weight: 700;
+  color: cyan;
+}
+
+.answers {
+  display: none;
+}
+
+.answers.show {
+  margin-top: 16px;
+  color: white;
+  display: inline;
+}
+
+.questions-logo.rotate .fa-angle-double-down {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.section-heading h2:hover {
+  background: orange;
+  opacity: 0.95;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1360px) {
+  .hero-main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+  .hero-main-content .hero-main-image {
+    width: 60%;
+    padding: auto;
+    margin: 0 auto;
+  }
+  .hero-main-content .main-hero-faq {
+    width: 80%;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-nav p:nth-child(1n) {
+    font-size: 0.9rem !important;
+    padding: 0.7rem !important;
+  }
+  .hero-nav p:nth-child(1n):after {
+    bottom: 7px !important;
+    left: 14px !important;
+  }
+  .hero-main-image {
+    width: 400px !important;
+    padding: auto;
+  }
+}
+
+@-webkit-keyframes hero-nav-links-animation {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes hero-nav-links-animation {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 75%;
+  }
+}
+/*# sourceMappingURL=courses.css.map */
